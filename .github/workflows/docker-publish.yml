@@ -86,7 +86,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          image-ref: ghcr.io/mareksadlowski/nginx:1.25.1
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
